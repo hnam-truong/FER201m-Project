@@ -1,0 +1,142 @@
+.des {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.des2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+}
+
+.des-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 8rem auto;
+}
+
+.des-right {
+    border-radius: 6px;
+    background-color: rgba(73, 73, 73, 0.677);
+    padding: 4vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* margin-left: 2rem; */
+    /* border-style: solid ;
+    border-color: rgb(255, 255, 255); */
+    width: 90%;
+    height: 100%;
+    position: relative;
+}
+
+.des-right h3{
+    font-size: 4vh;
+}
+
+.detail-label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 2vh;
+    color: white;
+    margin-top: 3rem;
+}
+
+.detail-poster {
+    width: 70%;
+    height: 100%;
+    border-radius: 4px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.detail-trailer {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.detail-trailer-logo {
+    margin: 0 0.1rem;
+}
+
+.detail-des{
+    margin-top: 1rem;
+    font-size: 2.5vh;
+    color: #ddd;
+    font-weight: bold;
+}
+
+.detail-info {
+    right: 4vh;
+    left: 4vh;
+    top: 25vh;
+    bottom: 4vh;
+    position: absolute;
+    font-size: 2vh;
+    overflow: auto;
+    color: #ddd;
+    text-align: justify;
+}
+
+.trailer-close {
+    transition: all 200ms;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #d1d1d1;
+    display: flex;
+    align-items: center;
+  }
+
+  .trailer-close:hover {
+    color: #0076ad;
+  }
+  
+  #trailer-close:target~.overlay {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .trailer-overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: all 500ms;
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .trailer-overlay:target {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .trailer-popup {
+    margin: 25vh auto;
+    padding: 2rem;
+    border-radius: 6px;
+    min-width: 17rem;
+    position: relative;
+  }
+
+  .trailer-yt{
+    border: none;
+    margin-bottom: 0.5rem;
+  }
+
+  .trailer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }

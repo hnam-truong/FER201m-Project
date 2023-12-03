@@ -1,0 +1,54 @@
+.delete-edit-btn {
+    margin-top: 1rem;
+}
+
+.des-right-edit {
+    border-radius: 6px;
+    background-color: rgb(235, 235, 235);
+    padding: 4vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    position: relative;
+}
+
+.add-logo {
+    margin: 0 0.5rem;
+}
+
+.create-film {
+    border-radius: 6px;
+    background-color: rgb(235, 235, 235);
+    padding: 4vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    margin-top: -50px;
+    margin-left: -50px;
+}
+
+.addFilm-close {
+    transition: all 200ms;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #717171;
+    align-items: center;
+    position: absolute;
+    left: 0.4rem;
+    top: 0.4rem;
+  }
+
+  .addFilm-close:hover {
+    color: #0076ad;
+  }
+  
+  #addFilm-close:target~.overlay {
+    visibility: hidden;
+    opacity: 0;
+  }
